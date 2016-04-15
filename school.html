@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>home</title>
+		<link rel="stylesheet" href="school.css" type="text/css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	</head>
+	<body>
+	<div id="load"></div>
+		<div id="container">
+			<div id="headercontain">
+				<div id="header">
+					<div id="search">
+						<form class="searchForm" method="get" action="https://google.com/search">
+							<input class="searchBar search_google" autocomplete="off" type="text" name="q" placeholder="search" autofocus="autofocus" search_/>
+						 </form>
+					</div>
+					<div id="linkscarousel">
+						<ul>
+							<li><a href="index.html" id="current">index</a></li>
+							<li><a href="4chan.html">4chan</a></li>
+							<li><a href="fun.html">fun</a></li>
+							<li><a href="school.html">school</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div id="linkcontain">
+				
+				<div id="main" class="linkbox">
+					<div class="bg"></div>
+					<div class="contentcontain">
+						<div class="content">
+							<span>main</span>
+						</div>
+						<div class="links">
+							<ul>
+								<li><a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">gmail</a></li>
+								<li><a href="https://todoist.com/app?lang=en&v=720#start" target="_blank">todoist</a></li>
+								<li><a href="http://my.oakton.edu/cp/home/loginf" target="_blank">myoak</a></li>
+							</ul>
+						</div>				
+					</div>
+				</div>
+				
+				<!--<div id="idk" class="linkbox">
+					<div class="bg"></div>
+					<div class="contentcontain">
+						<div class="content">
+							<span>art</span>
+						</div>
+						<div class="links">
+							<ul>
+								<li><a href="http://www.pixiv.net/bookmark_new_illust.php" target="_blank">pixiv</a></li>
+								<li><a href="http://www.deviantart.com/browse/all/" target="_blank">deviantart</a></li>
+								<li><a href="http://danbooru.donmai.us/" target="_blank">booru</a></li>
+							</ul>
+						</div>				
+					</div>
+				</div>
+				
+				<div id="idk" class="linkbox">
+					<div class="bg"></div>
+					<div class="contentcontain">
+						<div class="content">
+							<span>misc</span>
+						</div>
+						<div class="links">
+							<ul>
+								<li><a href="https://www.youtube.com" target="_blank">youtube</a></li>
+								<li><a href="https://www.reddit.com/" target="_blank">reddit</a></li>
+								<li><a href="https://mail.google.com/mail/" target="_blank">gmail</a></li>
+							</ul>
+						</div>				
+					</div>
+				</div>-->
+				
+			</div>
+			
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="jquery.mousewheel.min.js"></script>
+		<script>
+			$('body').on('mousewheel', function(e) {
+					var url = document.URL; // full page URL
+    pages = [ "index.html", "4chan.html", "fun.html", "school.html" ];
+    currPage  = url.substring(url.lastIndexOf('/') + 1) || "fun.html";
+    wheelAt = $.inArray(currPage, pages);
+					if (e.deltaY>0) {
+							wheelAt = 0;
+						  window.location = pages[ wheelAt ];
+					} else {
+							wheelAt = 2;
+						  window.location = pages[ wheelAt ];
+					}
+					e.preventDefault();
+			});
+		</script>
+		<script>
+			function resize() {
+				var winht = $(window).height();
+				var ht = (winht - 75);
+				$('.linkbox').height(ht);
+				$('.bg').height(ht);
+			}
+						
+			$(window).load(function() {
+				$('#load').fadeOut(600);
+			});
+			
+			resize();
+			
+			$(window).on(resize,function() {
+				resize();
+			})
+		</script>
+	</body>
+</html>
