@@ -19,9 +19,6 @@ body,html {
 * {
 	font-family:'Product Sans';
 }
-#container * {
-	transition:300ms;
-}
 #container {
 	text-align: center;
 	margin:0 auto;
@@ -82,7 +79,7 @@ a, a:visited, a:active, a:focus {
 	color:#385e7a !important;
 }
 #search input:focus {
-	border:1px solid #d8d8d8;
+	outline:1px solid #d8d8d8;
 }
 #search input:focus::-moz-placeholder {
 	color:#1d4059;
@@ -120,20 +117,22 @@ a, a:visited, a:active, a:focus {
 .links a {
 	color:#bfbfbf;
 }
-#twit .links a:hover {
-	color:#a02c2d;
+#one .links a:hover {
+	color:#BF84A0;
 }
-#art .links a:hover {
-	color:#3b5468;
+#two .links a:hover {
+	color:#389BF2;
 }
-#misc .links a:hover {
-	color:#699280;
+#three .links a:hover {
+	color:#D96CA8;
 }
 .linkbox:hover .bg {
 	filter:none;
+	transition:300ms;
 }
 .linkbox:hover .links a {
 	color:#f4f4f4;
+	transition:300ms;
 }
 .linkbox:hover .contentcontain {
 	color:#fff;
@@ -144,15 +143,15 @@ a, a:visited, a:active, a:focus {
 	background-size:cover !important;
 	background-repeat: no-repeat !important;
 }
-#twit .bg {
-	background:url(twit.jpg);
+#one .bg {
+	background:url(../img/one.jpg);
 	background-position: 0% 30%;
 }
-#art .bg {
-	background-image:url(art.jpg);
+#two .bg {
+	background-image:url(../img/two.jpg);
 	background-position: 0% 30%;
 }
-#misc .bg {
-	background-image:url(misc.jpg);
+#three .bg {
+	background-image:url(../img/three.jpg);
 	background-position:0% 30%;
 }

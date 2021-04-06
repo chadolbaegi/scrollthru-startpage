@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>home</title>
-		<link rel="stylesheet" href="fun.css" type="text/css">
+		<link rel="stylesheet" href="css/fun.css" type="text/css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	</head>
@@ -20,66 +20,66 @@
 					<div id="linkscarousel">
 						<ul>
 							<li><a href="index.html" id="current">index</a></li>
-							<li><a href="4chan.html">4chan</a></li>
+							<li><a href="reddit.html">reddit</a></li>
 							<li><a href="fun.html">fun</a></li>
 							<li><a href="school.html">school</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="linkcontain">
-				
-				<div id="twit" class="linkbox">
+
+				<div id="one" class="linkbox">
 					<div class="bg"></div>
 					<div class="contentcontain">
 						<div class="content">
-							<span>twitter</span>
+							<span>one</span>
 						</div>
 						<div class="links">
 							<ul>
-								<li><a href="https://twitter.com/" target="_blank">top</a></li>
-								<li><a href="https://twitter.com/chadolbaki7/lists/list1" target="_blank">favorites</a></li>
-								<li><a href="https://twitter.com/chadolbaki7/lists/list2" target="_blank">friends</a></li>
+								<li><a href="" target="_blank">one</a></li>
+								<li><a href="" target="_blank">two</a></li>
+								<li><a href="" target="_blank">three</a></li>
 							</ul>
-						</div>				
+						</div>
 					</div>
 				</div>
-				
-				<div id="art" class="linkbox">
+
+				<div id="two" class="linkbox">
 					<div class="bg"></div>
 					<div class="contentcontain">
 						<div class="content">
-							<span>art</span>
+							<span>two</span>
 						</div>
 						<div class="links">
 							<ul>
-								<li><a href="http://www.pixiv.net/bookmark_new_illust.php" target="_blank">pixiv</a></li>
-								<li><a href="http://www.deviantart.com/browse/all/" target="_blank">deviantart</a></li>
-								<li><a href="http://danbooru.donmai.us/" target="_blank">booru</a></li>
+								<li><a href="" target="_blank">one</a></li>
+								<li><a href="" target="_blank">two</a></li>
+								<li><a href="" target="_blank">three</a></li>
 							</ul>
-						</div>				
+						</div>
 					</div>
 				</div>
-				
-				<div id="misc" class="linkbox">
+
+				<div id="three" class="linkbox">
 					<div class="bg"></div>
 					<div class="contentcontain">
 						<div class="content">
-							<span>misc</span>
+							<span>three</span>
 						</div>
 						<div class="links">
 							<ul>
-								<li><a href="https://www.youtube.com" target="_blank">youtube</a></li>
-								<li><a href="https://www.reddit.com/" target="_blank">reddit</a></li>
-								<li><a href="https://mail.google.com/mail/" target="_blank">gmail</a></li>
+								<li><a href="" target="_blank">one</a></li>
+								<li><a href="" target="_blank">two</a></li>
+								<li><a href="" target="_blank">three</a></li>
 							</ul>
-						</div>				
+						</div>
 					</div>
 				</div>
-				
+
 			</div>
-			
+
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -87,7 +87,7 @@
 		<script>
 			$('body').on('mousewheel', function(e) {
 					var url = document.URL; // full page URL
-    pages = [ "index.html", "4chan.html", "fun.html", "school.html" ];
+    pages = [ "index.html", "reddit.html", "fun.html", "school.html" ];
     currPage  = url.substring(url.lastIndexOf('/') + 1) || "fun.html";
     wheelAt = $.inArray(currPage, pages);
 					if (e.deltaY>0) {
@@ -107,13 +107,13 @@
 				$('.linkbox').height(ht);
 				$('.bg').height(ht);
 			}
-			
+
 			$(window).load(function() {
 				$('#load').fadeOut(600);
 			});
-						
+
 			resize();
-			
+
 			$(window).on(resize,function() {
 				resize();
 			})

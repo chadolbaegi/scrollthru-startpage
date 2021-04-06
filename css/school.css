@@ -19,9 +19,6 @@ body,html {
 * {
 	font-family:'Product Sans';
 }
-#container * {
-	transition: 300ms;
-}
 #container {
 	text-align: center;
 	margin:0 auto;
@@ -82,7 +79,7 @@ a, a:visited, a:active, a:focus {
 	color:#385e7a !important;
 }
 #search input:focus {
-	border:1px solid #d8d8d8;
+	outline:1px solid #d8d8d8;
 }
 #search input:focus::-moz-placeholder {
 	color:#1d4059;
@@ -131,9 +128,11 @@ a, a:visited, a:active, a:focus {
 }
 .linkbox:hover .bg {
 	filter:none;
+	transition: 300ms;
 }
 .linkbox:hover .links a {
 	color:#f4f4f4;
+	transition: 300ms;
 }
 .linkbox:hover .contentcontain {
 	color:#fff;
@@ -144,14 +143,7 @@ a, a:visited, a:active, a:focus {
 	background-size:cover !important;
 	background-repeat: no-repeat !important;
 }
-#main .bg {	background:url(school.jpg);
+#main .bg {
+	background-image:url(../img/school.jpg);
 	background-position: 0% 50%;
-}
-#art .bg {
-	background-image:url(art.jpg);
-	background-position: 0% 30%;
-}
-#misc .bg {
-	background-image:url(misc.jpg);
-	background-position:0% 30%;
 }

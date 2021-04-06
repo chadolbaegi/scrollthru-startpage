@@ -1,6 +1,7 @@
 body,html {
 	height:100%;
 	width:100%;
+	overflow:hidden;
 	margin:0 auto !important;
 	left:0;right:0;top:0;bottom:0;
 	text-align: center;
@@ -73,10 +74,10 @@ a, a:visited, a:active, a:focus {
 	color:#385e7a !important;
 }
 #search input:focus {
-	border:1px solid #d8d8d8;
+	outline:1px solid #d8d8d8;
 }
 #search input:focus::-moz-placeholder {
-	color:#1d4059;
+	color:#d8d8d8;
 }
 #search input::-moz-placeholder {
 	color:#4b4949;
@@ -89,9 +90,9 @@ a, a:visited, a:active, a:focus {
 	height:300px;
 	background-size:cover !important;
 	background-repeat: no-repeat !important;
-	background-position: 0% 30% !important;
+	background-position: 0% 50% !important;
 	text-align: center;
-	background:url(mountain.jpg);
+	background-image:url(../img/leaves.jpg);
 	position: relative;
 }
 #toptext {
@@ -138,14 +139,6 @@ a, a:visited, a:active, a:focus {
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
 .linkbox {
 	width:80%;
 	box-shadow:0px 0px 10px #ccc;
@@ -190,12 +183,12 @@ a, a:visited, a:active, a:focus {
 .linkbox li:not(:first-of-type):hover {
 	background:rgba(255,255,255,0.5);
 }
-#twitter li:first-of-type, #twitter li:not(:first-of-type):hover {
+#socialmedia li:first-of-type, #socialmedia li:not(:first-of-type):hover {
 	background:#55acee;
 }
-#tumblr li:first-of-type, #tumblr li:not(:first-of-type):hover {
+#writing li:first-of-type, #writing li:not(:first-of-type):hover {
 	background:#35465c;
 }
-#yonchan li:first-of-type, #yonchan li:not(:first-of-type):hover {
+#relax li:first-of-type, #relax li:not(:first-of-type):hover {
 	background:#d6daf0;
 }

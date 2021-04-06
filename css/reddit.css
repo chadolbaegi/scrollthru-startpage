@@ -19,9 +19,9 @@ body,html {
 * {
 	font-family:'Product Sans';
 }
-#container * {
+/* #container a:hover, #container .bg:hover{
 	transition:300ms;
-}
+} */
 #container {
 	text-align: center;
 	margin:0 auto;
@@ -82,7 +82,7 @@ a, a:visited, a:active, a:focus {
 	color:#385e7a !important;
 }
 #search input:focus {
-	border:1px solid #d8d8d8;
+	outline:1px solid #d8d8d8;
 }
 #search input:focus::-moz-placeholder {
 	color:#1d4059;
@@ -120,20 +120,22 @@ a, a:visited, a:active, a:focus {
 .links a {
 	color:#bfbfbf;
 }
-#u .links a:hover {
-	color:#5f3237;
+#acnh .links a:hover {
+	color:#6BD9F2;
 }
-#w .links a:hover {
-	color:#a37e6e;
+#keeb .links a:hover {
+	color:#2F4073;
 }
-#jp .links a:hover {
-	color:#434254;
+#cat .links a:hover {
+	color:#A63126;
 }
 .linkbox:hover .bg {
 	filter:none;
+	transition:300ms;
 }
 .linkbox:hover .links a {
 	color:#f4f4f4;
+	transition:300ms;
 }
 .linkbox:hover .contentcontain {
 	color:#fff;
@@ -144,15 +146,15 @@ a, a:visited, a:active, a:focus {
 	background-size:cover !important;
 	background-repeat: no-repeat !important;
 }
-#u .bg {
-	background:url(u.jpg);
-	background-position: 0% 35%;
+#acnh .bg {
+	background-image:url(../img/acnh.jpg);
+	background-position: 0% 50%;
 }
-#w .bg {
-	background-image:url(w.jpg);
-	background-position: 0% 40%;
+#keeb .bg {
+	background-image:url(../img/mech.jpg);
+	background-position: 0% 60%;
 }
-#jp .bg {
-	background-image:url(jp.jpg);
-	background-position:0% 25%;
+#cat .bg {
+	background-image:url(../img/cat.jpg);
+	background-position:0% 70%;
 }
