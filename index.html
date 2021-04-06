@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>home</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	</head>
@@ -19,59 +19,59 @@
 				<div id="linkscarousel">
 					<ul>
 						<li><a href="index.html">index</a></li>
-						<li><a href="4chan.html">4chan</a></li>
+						<li><a href="reddit.html">reddit</a></li>
 						<li><a href="fun.html">fun</a></li>
 						<li><a href="school.html">school</a></li>
 					</ul>
 				</div>
 			</div>
-			
+
 			<div id="topimage">
 				<div id="topcontainer">
 					<div id="toptext">
-						<span class="h1"><span class="greeting"></span>, onii-chan</span>
+						<span class="h1"><span class="greeting"></span></span>
 						<br>
 						<span class="subtitle jinx"></span>
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="midtext">
 				<h1><span>everyday is the best day</span></h1>
 			</div>
-			
+
 			<div id="bottomlinks">
-				<div id="twitter" class="linkbox">
+				<div id="socialmedia" class="linkbox">
 					<ul>
-						<li><i class="material-icons md-30">cake</i></li>
+						<li><span class="material-icons md-30">face</span></li>
 						<li><a href="https://twitter.com/" target="_blank">twitter</a></li>
-						<li><a href="https://twitter.com/intent/tweet" target="_blank">new tweet</a></li>
-						<li><a href="https://twitter.com/chadolbaki7/lists/list1" target="_blank">favorites</a></li>
+						<li><a href="https://www.tumblr.com/dashboard" target="_blank">tumblr</a></li>
+						<li><a href="https://instagram.com/" target="_blank">instagram</a></li>
 					</ul>
 				</div>
-				
+
 				<br>
-				
-				<div id="tumblr" class="linkbox">
+
+				<div id="writing" class="linkbox">
 					<ul>
 						<li><i class="material-icons md-30">create</i></li>
-						<li><a href="https://www.tumblr.com/dashboard" target="_blank">tumblr</a></li>
-						<li><a href="https://www.tumblr.com/new/photo" target="_blank">new post</a></li>
-						<li><a href="https://www.tumblr.com/following" target="_blank">following</a></li>
+						<li><a href="http://gmail.com/" target="_blank">gmail</a></li>
+						<li><a href="https://medium.com/" target="_blank">medium</a></li>
+						<li><a href="https://archiveofourown.org/" target="_blank">ao3</a></li>
 					</ul>
 				</div>
-				
+
 				<br>
-				
-				<div id="yonchan" class="linkbox">
+
+				<div id="relax" class="linkbox">
 					<ul>
 						<li><i class="material-icons md-30">grade</i></li>
-						<li><a href="http://boards.4chan.org/w/catalog#s=phone" target="_blank">phone</a></li>
-						<li><a href="http://boards.4chan.org/u/catalog#s=drawthread" target="_blank">drawfag</a></li>
-						<li><a href="http://boards.4chan.org/jp/catalog#s=doll" target="_blank">dollthread</a></li>
+						<li><a href="https://www.netflix.com/browse" target="_blank">netflix</a></li>
+						<li><a href="http://youtube.com/" target="_blank">youtube</a></li>
+						<li><a href="http://reddit.com/" target="_blank">reddit</a></li>
 					</ul>
 				</div>
-				
+
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -81,10 +81,10 @@
 			$(window).load(function() {
 				$('#load').fadeOut(600);
 			});
-			
+
 			$('body').on('mousewheel', function(e) {
 					var url = document.URL; // full page URL
-    pages = [ "index.html", "4chan.html", "fun.html", "school.html" ];
+    pages = [ "index.html", "reddit.html", "fun.html", "school.html" ];
     currPage  = url.substring(url.lastIndexOf('/') + 1) || "index.html";
     wheelAt = $.inArray(currPage, pages); // get 0,1,2,3
 					if (e.deltaY>0) {
